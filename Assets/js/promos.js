@@ -53,7 +53,7 @@ var data = [
 var promo=[];
 if (document.getElementById("container_promos")) {
     for (let i = 0; i < data.length; i++) {
-     promo += `<a href="contactanos.html">
+     promo += `<a class=a_promo href="contactanos.html">
         <div class="card_promo">
         <img src=${data[i].img} alt="chubut" class=img >
         <p class="lugar">${data[i].lugar}</p> 

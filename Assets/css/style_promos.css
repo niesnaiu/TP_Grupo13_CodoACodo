@@ -6,12 +6,14 @@
         'line1 line1 line1'
         'line2 line2 line2';
     place-items: center;
-
 }
-a, a:link, a:visited{
+.a_promo,
+.a_promo:link,
+.a_promo:visited {
     text-decoration: none;
     color: #070707;
 }
+
 .card_promo {
     border: none;
     padding: none;
@@ -57,3 +59,32 @@ a, a:link, a:visited{
     opacity: 0.8;
 }
 
+@media (max-width: 640px) {
+    #container_promos {
+        margin: 1rem 1rem;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            'line1' 
+            'line1'
+            'line1'
+            'line2'
+            'line2' 
+            'line2';
+        place-items: center;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 920px) {
+    
+    #container_promos {
+        margin: 1rem 1rem;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            'line1 line1'
+            'line2 line2'
+            'line3 line3';
+        place-items: center;
+    }
+}
