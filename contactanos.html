@@ -4,41 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Assets/css/style.css">
   <link rel="stylesheet" href="./Assets/css/contacto.css">
-
-
   <link rel="apple-touch-icon" sizes="180x180" href="./Assets/imagenes/apple-touch-icon.png">
   <link rel="shortcut icon" href="imagenes.html/favicon-16x16.png" type="image/x-icon">
   <link rel="icon" type="image/png" sizes="32x32" href="./Assets/imagenes/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./Assets/imagenes/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
   <meta name="viewport" content="width=device-width" />
   <meta name="viewport" content="width=device-width, maximum-scale=2" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
   <title>Grupo 13</title>
 </head>
 
 <body>
-
   <header>
     <nav>
-
       <section class="top-nav">
-
         <div>
-          <a href="index.html"><img src="./Assets/imagenes/android-chrome-512x512.png" id="logo-nav"></a>
+          <a href="./index.html"><img src="./Assets/imagenes/android-chrome-512x512.png" id="logo-nav"></a>
         </div>
-
         <input id="menu-toggle" type="checkbox" />
-
         <label class='menu-button-container' for="menu-toggle">
-          <div class='menu-button'>
-          </div>
+          <div class='menu-button'></div>
         </label>
 
         <ul class="menu">
@@ -48,22 +38,18 @@
           <li><a href="contactanos.html" id="contactanos">Contacto</a></li>
           <li></li>
         </ul>
-
       </section>
     </nav>
     
     <title>Formulario de contacto</title>
   </header>
+
   <main>
   <div class="contact_form">
-
     <div class="formulario">
-      <h1>Formulario de contacto</h1>
-      <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
-
-
+      <h1 id="tituloform">Formulario de contacto</h1>
+      <h3 id="escform">Escríbenos y en breve nos pondremos en contacto contigo</h3>
       <form action="submeter-formulario.php" method="post">
-
         <p>
           <label for="nombre" class="colocar_nombre">Nombre
             <span class="obligatorio">*</span>
@@ -72,7 +58,6 @@
             placeholder="Escribe tu nombre">
         </p>
 <!--Formulario para saber si escribe desde Argentina-->
-
         <p>¿Nos escribes desde Argentina?</p>
         <div class="checkboxdiv">
           <label class="checkbox-label" for="afirmativo">Sí</label>
@@ -80,7 +65,6 @@
           <label class="checkbox-label" for="negativo">No</label>
           <input type="checkbox" id="negativo" name="respuesta" value="negativo">
         </div>
-
 <!--Uso de Api Rest-->
 <p>En caso de ser así ¿Desde donde nos escribes?</p>
 <br>
@@ -144,8 +128,6 @@
         <p class="aviso">
           <span class="obligatorio"> * </span>los campos son obligatorios.
         </p>
-        
-
       </form>
     </div>
   </div>
@@ -160,18 +142,6 @@
     <h4>&copy 2023 Grupo 13</h4>
 
 </footer>
-</body>
-
-
-</html>
-
-
-
-
-
-
-
-
 </body>
 
 </html>
